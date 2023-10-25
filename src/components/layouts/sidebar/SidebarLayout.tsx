@@ -11,6 +11,7 @@ const SidebarLayout: React.FC<ISidebarLayout> = () => {
       <input className={styles.input} placeholder="Search..." />
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
+      <Link href="/contact">Contact Us</Link>
     </nav>
   );
 };

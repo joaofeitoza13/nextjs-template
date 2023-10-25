@@ -1,8 +1,6 @@
-import { NextPageWithLayout } from '@/app/page.d';
-import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
-import SidebarLayout from '@/components/layouts/sidebar/SidebarLayout';
+import { NextPage } from "next";
 
-const About: NextPageWithLayout = () => {
+const About: NextPage = () => {
   return (
     <section>
       <h2>Layout Example (About)</h2>
@@ -34,12 +32,3 @@ const About: NextPageWithLayout = () => {
 };
 
 export default About;
-
-About.getLayout = (page) => {
-  return (
-    <PrimaryLayout>
-      <SidebarLayout />
-      {page}
-    </PrimaryLayout>
-  );
-};
