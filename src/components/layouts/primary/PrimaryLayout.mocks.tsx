@@ -1,7 +1,7 @@
 import { IPrimaryLayout } from './PrimaryLayout';
 
 const base: IPrimaryLayout = {
-  children: 'Hello world!',
+  children: '{{component}}',
 };
 
 export const mockPrimaryLayoutProps = {
